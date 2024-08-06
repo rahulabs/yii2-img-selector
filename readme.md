@@ -7,6 +7,8 @@ I made such a widget for myself. Basically, you need to download RFM, place it i
 
 Use: `->widget(\rahulabs\yii2\imgSelector\ImageSelector::className())` on the required field in the admin form.
 
+Add Constant **WEBSITE_URL** in your project as domain URL: http://localhost
+
 ## Install
 
 `composer require rahulabs/yii2-img-selector`

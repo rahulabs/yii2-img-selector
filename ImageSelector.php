@@ -35,8 +35,13 @@ class ImageSelector extends InputWidget {
 			'data-img-id' => $this->options['id'],
 		]);
 		$style= '';
-		if(!empty($this->options['value'])) $style = 'background-image:url("' .config_website_url. $this->options['value'] . '");';
-		if(isset($this->model->{$this->attribute})) $style = 'background-image:url("' .config_website_url.$this->model->{$this->attribute} . '");';
+		if(!empty($this->options['value'])) {
+            $style = 'background-image:url("' .WEBSITE_URL. $this->options['value'] . '");';
+        }
+
+		if(isset($this->model->{$this->attribute})) {
+            $style = 'background-image:url("' .WEBSITE_URL.$this->model->{$this->attribute} . '");';
+        }
 		$imgPreview   = Html::tag('div', '&nbsp;', [
 			'id'    => 'preview__' . $this->options['id'],
 			'class' => 'imgSelectorPreview',
