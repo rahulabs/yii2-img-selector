@@ -6,7 +6,7 @@ use yii\web\AssetBundle;
 
 class ImageSelectorAsset extends AssetBundle {
 
-	public $sourcePath = '@vendor/lg-xenos/yii2-img-selector/assets';
+	public $sourcePath = '@vendor/rahulabs/yii2-img-selector/assets';
 
 	public $js = [
 		'fancybox.min.js',
